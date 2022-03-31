@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;/* 
+    overflow: hidden; */
+}
+:root{
+    --bgc:rgb(237, 245, 237);
+}
+body{
+    margin: 50px;
+    background-color:blue;
+    border: 1px solid #000;
+    box-shadow: /* 10px 4px 8px 10px rgba(37, 5, 177, 0.19), 10px 6px 2px 10px rgba(37, 5, 177, 0.19); */
+     10px 5px 1px 1px rgb(12, 1, 37), 3px 3px 8px 15px rgb(12, 1, 37);
+}
+main{
+   overflow: auto;
+}
+.navbar {
+    width: auto;
+    background-image: url(./img/museo.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--bgc);
+    padding: 5px;
+    overflow: auto;
+}
+    .logo {
+        float: left;
+        width: 20%;
+        height: 50px;
+       /*  border: 1px solid #000; */
+        box-sizing: border-box;
+    }
+
+    .navegacion {
+        float: right;
+        width: 80%;
+        height: 50px;
+        /* border: 1px solid #000; */
+        box-sizing: border-box;
+    }
+        #derecha{
+            margin-left: 45%;
+        }
+        .navegacion a {
+            width: 30px;
+            margin: 5px;
+            padding: 5px;
+            box-sizing: border-box;
+           /*  border: 1px solid #000; */
+            box-shadow: inset hoff voff blur rgb(102, 96, 96);
+            color: #fff;
+        }
+.home{
+    margin: 10px;
+    padding: 10px;
+    width: auto;
+    box-sizing: border-box;
+}
+    .home h1, h2, h3, p, i{
+        text-align: center;
+        font-size: bold;
+        color: #fff;
+    }
+    #start{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color:blue;
+        border-color: var(--bgc);
+    }
+.about{
+    width: auto;
+    padding: 80px;
+    background-color: #fff ;
+    box-sizing: border-box;
+}
+    .about h2{
+        text-align: center;
+        font-size: bold;
+        color: blue;
+        background-color: #fff ;
+    }
+    .about p{
+        text-align: center;
+        font-size: bold;
+        color: black;
+        background-color: #fff ;
+    }
+    #read{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color: blue;
+        border-color: blue;
+    }
+.cards{
+    width: 100%;
+    background-color: blue;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: auto;
+}    
+    .card1{
+        float: left;
+        width: 32%;
+        padding: 30px;       
+    }
+    .card2{
+        float: left;
+        padding: 30px;
+        width: 32%;
+        background-color: rgb(7, 7, 7);
+    }
+    .card3{
+        float: left;
+        padding: 30px;
+        width: 32%;
+    }
+        .cards i{
+            font-size: 30px;
+        }
+.servicios, .portfolio{
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+    .titulo h2{
+        color:blue;
+        font-size: bold;        
+    }
+    .titulo p{
+        color:black;
+        font-size: bold;
+        text-align: center;
+    }
+    .descripcion{
+        width: 100%;
+        background-color: #fff;
+        overflow: auto;
+    }
+        .categoria {/* 11.20  12.36= 1,16hora*/
+        float: left;
+        width: 20%;
+        margin:5px;
+        margin-left: 95px;
+        box-sizing: border-box;
+        background-color:rgb(231, 231, 225);
+        border-radius: 20% 0 0 20%;
+        }
+            .categoria i{
+                float: left;
+                padding: 10px;
+                font-size: 20px;
+                color: blue;
+                background-color:rgb(231, 231, 225);
+                border: 1px solid blue;
+                border-radius: 50%;
+            }
+            .categoria p{
+                display:middle;
+                line-height: 1px ;
+                color:blue
+            }
+
+/*  otra forma, no funcionó !
+          .categoria i{
+                display:block;
+                position: absolute;
+                margin-top: 16px;
+                margin-left: 3px;
+                padding: 10px;
+                font-size: 20px;
+                color: blue;
+                background-color:rgb(231, 231, 225);
+                border: 1px solid blue;
+                border-radius: 50%;
+            }
+            .categoria p{
+                display:block;
+                position: relative;
+                margin-left: 35px;
+                line-height: 45px ;
+                color:blue;
+            } */
+/* CARDS DE ABAJO */
+    .card4{
+        float: left;
+        color: #fff;
+        width: 25%;
+    }
+    .card4 i{
+        border: 1px solid #fff;
+        border-radius: 50%;
+        font-size: 20px;
+        padding: 15px;
+        margin-top: 10px;
+    }
+/* PORTFOLIO */
+    .list{
+text-align: center;
+    }
+        ul li{
+            display:inline-block;
+            padding: 25px;
+        }
+    .vista, footer{
+        text-align: center;
+    }
+        .vista img{
+            width: 300px;
+            height: 330px;
+            margin: -3px;
+        }
+    footer img{
+        float: left;
+        width: 100px;
+        height: 147px;
+        margin-left: 45%;
+        margin-top: 30px;
+        border-radius: 25% 0;
+    }
+    footer pre{
+        float: left;
+        margin-top: 50px;
+        margin-left: -100px;
+        color: #fff;
+    }
