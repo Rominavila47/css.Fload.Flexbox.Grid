@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --bgc:rgb(237, 245, 237);
+    --cb: rgba(1, 26, 120, 0.844);
+}   
+body{
+    margin: 5rem;
+    background-color: var(--cb); 
+    box-shadow: 10px 5px 1px 1px rgb(12, 1, 37), 3px 3px 8px 15px rgb(12, 1, 37);
+}
+main{
+    display:flex;
+    flex-flow: column nowrap;
+    border: 1px solid black;
+} 
+header{
+    background-image: url("/img/museo.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.navbar{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10px;
+}
+    .logo{
+        flex: 1 1 auto;
+    }
+    .navegacion{
+        flex: 5 1 auto;
+        text-align: end; /* me pregunto si esta bien usar text-align */
+    }
+        .navegacion a{
+            margin: 5px;
+            text-decoration: none;
+            color: var(--bgc);
+        }
+    .home{        
+        padding: 10px;
+        margin: 10px;
+        flex-flow: column nowrap;
+        text-align: center;        
+    }
+        .home h1, .home h3,.home p{
+            color: var(--bgc);
+        }
+        #start{
+            padding: 10px;
+            background-color: var(--bgc);
+            border-radius: 20px;
+            color: var(--cb);
+        }
+/*40min*/
+.about{
+    padding: 50px;
+    flex-flow: column nowrap;
+    text-align: center;
+    background-color: var(--bgc);
+}
+    .about h2{
+        color: var(--cb);
+    }
+    .about p{
+        padding: 30px;
+    }
+    #read{
+        padding: 10px;
+        background-color: var(--bgc);
+        border: 2px solid cb;
+        border-radius: 20px;
+        color: var(--cb);
+    }
+    /* 5min */
+    .cards{
+        display: flex;
+        flex-flow: row nowrap;
+        text-align: center;
+        justify-content: space-around;
+        color: var(--bgc);
+    }
+        .card1, .card3{
+            padding: 50px;
+        }
+        .card2{
+            padding: 50px;
+            background-color: black;
+        }
+           .cards i{
+                font-size: 2rem;
+            }
+    /*5min*/
+.servicios{
+    padding: 50px;
+    background-color: var(--bgc);
+}
+    .titulo{
+        text-align: center;
+    }
+        .titulo h2{
+            color: var(--cb);
+        }
+        .titulo p{
+            padding: 0px 5rem ;
+        }
+    .descripcion{
+        padding: 50px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 1rem 2rem;
+    }   
+        .categoria{
+            display: flex;
+            flex: 1 1 30%;
+            background-color:rgb(231, 231, 225);
+        }
+        .categoria i{
+            float: left;
+            padding: 10px;
+            font-size: 2rem;
+            color: var(--cb);
+            background-color:rgb(231, 231, 225);
+            border: 1px solid var(--cb);
+            border-radius: 50%;
+        }
+        .categoria p{
+            margin-left: 1rem;
+            color:var(--cb)
+        }
+/*50min*/        
+        .card4{
+            padding: 2rem;
+        }
+            .card4 i{
+                padding: 1rem;
+                border: 1px solid var(--bgc);
+                border-radius: 50%;
+            }
+/*9min */          
+.portfolio{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 2rem;
+    background-color: var(--bgc);
+    text-align: center;
+} 
+        ul li{
+            display:inline-block;
+            padding: 1rem;
+        }
+        .vista img{
+            width: 270px;
+            height: 330px;
+            margin: -3px;
+        }
+/*14min 2.46*/
+.foto{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding-top: 1rem;
+}
+    .pie img{
+        width: 135px;
+        height: 200px;
+    }
