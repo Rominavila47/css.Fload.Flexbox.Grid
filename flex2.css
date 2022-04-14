@@ -162,6 +162,11 @@ footer{
     .dark{
         background-color: black;
     }
+    .red:hover{
+        background-color: var(--red);
+        box-shadow: 5px 5px 5px;
+        color: var(--whi);
+    }
 @media screen and (max-width: 575px) {
     #main {
         flex-direction: column;
